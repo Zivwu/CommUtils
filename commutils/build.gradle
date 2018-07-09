@@ -6,11 +6,14 @@ android {
 
 
     defaultConfig {
-        compileSdkVersion rootProject.ext.android["minSdkVersion"]
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
     }
 
 }
 
 dependencies {
     testImplementation rootProject.ext.dependencies["junit"]
+    api  rootProject.ext.dependencies["appcompat-v7"]
+    api  rootProject.ext.dependencies["support-v4"]
+    api  rootProject.ext.dependencies["design"]
 }
